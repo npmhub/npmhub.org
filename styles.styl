@@ -18,6 +18,9 @@
 //   position relative
 //   min-width 320px
 //   max-width width
+
+npmColor=#CB3837
+
 *, *:before, *:after
   -moz-box-sizing border-box
   -webkit-box-sizing border-box
@@ -40,7 +43,7 @@ header
     max-width 100%
 
 section
-  background #CB3837
+  background npmColor
   color white
 
   #content
@@ -52,18 +55,32 @@ section
     max-width 640px
 
     h2
-      text-align: center
+      // text-align: center
+      font-size: 28px
 
     p
       font-size 18px
       line-height 1.4
       color rgba(255,255,255,0.8)
-      // text-align center
-      // text-align justify
-
-    a
-      color white
+      a
+        color white
+      &.spacey
+        margin: 30px 0 60px
 
     .footer
       p
         text-align center
+
+
+    a.button
+      color white
+      background: darken(npmColor, 10)
+      padding: 15px 20px
+      margin: 0 15px
+      line-height: 1
+      border-radius: 6px
+      text-decoration: none
+
+    img.screenshot
+      -webkit-transform translateX(-55px)
+      transform translateX(-55px)

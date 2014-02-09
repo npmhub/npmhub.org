@@ -10,21 +10,25 @@ html
     section
       #content
 
-        h2 Discover intersting node modules on github.com
+        h2 Find the npm modules the cool kids are using.
 
         :markdown
-          npm-hub is a browser extension for Chrome, Safari, and Firefox that notices when you're looking
-          at a GitHub repo with a package.json in it. If there are any `dependencies` or `devDependencies` listed
-          therein, npm-hub looks up each module on npmjs.org and displays its metadata right on the github
-          page, just below the README.
+          npm-hub is a browser extension for Chrome, Safari, and Firefox that helps you discover new npm modules while browsing github.com.
+          It notices when you're browsing a repo with a package.json in it. If there are any `dependencies` or `devDependencies` listed
+          therein, npm-hub fetches each module's metadata from a [CORS-friendly proxy of npmjs.org](https://github.com/zeke/npm-registry-cors-proxy) and displays its right on the github
+          page, just below the README. Here's what it looks like when browsing the awesome new [ourtunes](https://github.com/azer/ourtunes) project:
+
+        a(href="https://chrome.google.com/webstore/detail/npm-hub/kbbbjimdjbjclaebffknlabpogocablj")
+          img.screenshot(src="images/npm-hub-screenshot.png")
 
         .footer
+
+          p.spacey
+            a.button(href="https://chrome.google.com/webstore/detail/npm-hub/kbbbjimdjbjclaebffknlabpogocablj") Install on Google Chrome
+            a.button(href="http://crossrider.com/install/36212-npm-hub") Install on Other Browsers
+
           :markdown
-
-            [Install on Google Chrome](https://chrome.google.com/webstore/detail/npm-hub/kbbbjimdjbjclaebffknlabpogocablj) or [other browsers](http://crossrider.com/install/36212-npm-hub).
-
             npm-hub is free and [open source](https://github.com/zeke/npm-hub).
-
 
 
 
