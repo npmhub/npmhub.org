@@ -19,7 +19,10 @@ header {
 }
 
 header img {
-	max-width: 100%
+	display: block;
+	margin: auto;
+	width: 70vmin;
+	max-width: 50vw;
 }
 
 section {
