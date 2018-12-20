@@ -7,7 +7,7 @@
 body {
 	margin: 0;
 	padding: 0;
-	font-family: PT Sans, Helvetica Neue, Helvetica
+	font-family: PT Sans, Helvetica Neue, Helvetica;
 }
 
 header {
@@ -15,7 +15,7 @@ header {
 	margin-right: auto;
 	position: relative;
 	min-width: 320px;
-	max-width: 480px
+	max-width: 480px;
 }
 
 header img {
@@ -27,7 +27,7 @@ header img {
 
 section {
 	background: #cb3837;
-	color: #fff
+	color: #fff;
 }
 
 section #content {
@@ -36,39 +36,40 @@ section #content {
 	position: relative;
 	padding: 20px 20px 100px;
 	min-width: 320px;
-	max-width: 640px
+	max-width: 640px;
 }
 
 section #content h2 {
-	font-size: 24px
+	font-size: 24px;
 }
 
 section #content p {
 	font-size: 18px;
 	line-height: 1.4;
-	color: hsla(0, 0%, 100%, .8)
+	color: hsla(0, 0%, 100%, .8);
 }
 
 section #content p a {
-	color: #fff
+	color: #fff;
 }
 
 section #content p.spacey {
-	margin: 30px 0 60px
+	margin: 30px 0 60px;
 }
 
 section #content .footer p {
-	text-align: center
+	text-align: center;
 }
 
 section #content a.button {
+	display: inline-block;
 	color: #fff;
 	background: #a42c2b;
 	padding: 15px 20px;
-	margin: 0 15px;
+	margin: 15px;
 	line-height: 1;
 	border-radius: 6px;
-	text-decoration: none
+	text-decoration: none;
 }
 
 section #content img.screenshot {
