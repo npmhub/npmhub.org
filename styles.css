@@ -73,5 +73,6 @@ section #content a.button {
 
 section #content img.screenshot {
 	max-width: 700px;
-	transform: translateX(-55px)
+	width: 110%;
+	margin-left: -5%;
 }
