@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700">
 <header>
-	<a href="https://chrome.google.com/webstore/detail/npmhub/kbbbjimdjbjclaebffknlabpogocablj"><img src="images/npm-octocat.png"></a>
+	<img src="images/npm-octocat.png">
 </header>
 <section>
 	<div id="content">
@@ -16,9 +16,20 @@
 			or <code>devDependencies</code> listed therein, npmhub fetches each module’s metadata from the npm registry and
 			displays it right on the GitHub page, just below the README. Here’s an example:
 		</p>
-		<a href="https://chrome.google.com/webstore/detail/npmhub/kbbbjimdjbjclaebffknlabpogocablj">
-			<img class="screenshot" src="images//npm-hub-screenshot.png">
-		</a>
+		<noscript>
+			<img class="screenshot" src="images/chrome.png">
+		</noscript>
+		<script>
+			var browser = 'chrome';
+			if (navigator.userAgent.indexOf('Chrome') > 0) {
+				// Intentionally left empty
+			} else if (navigator.userAgent.indexOf('Safari') > 0) {
+				browser = 'safari';
+			} else if (navigator.userAgent.indexOf('Firefox') > 0) {
+				browser = 'firefox';
+			}
+			document.write('<img class="screenshot" src="images/' + browser + '.png">')
+		</script>
 		<div class="footer">
 			<p class="spacey">
 				<a class="button" href="https://chrome.google.com/webstore/detail/npmhub/kbbbjimdjbjclaebffknlabpogocablj">
